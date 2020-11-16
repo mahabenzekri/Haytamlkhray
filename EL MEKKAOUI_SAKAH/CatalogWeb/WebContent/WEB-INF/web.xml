@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>CatalogWeb</display-name>
+  <welcome-file-list>
+  	<welcome-file>index.jsp</welcome-file>
+  	<welcome-file>Hello.html</welcome-file>
+
+  </welcome-file-list>
+  
+  
+   <servlet>
+    <description>Ma première Servlet</description>
+    <display-name>HelloServlet</display-name>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>fr.info.sdweb.HelloServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>Servlet de produit</description>
+    <display-name>ProduitServlet</display-name>
+    <servlet-name>ProduitServlet</servlet-name>
+    <servlet-class>fr.info.sdweb.ProduitServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>Servlet ajout au panier</description>
+    <display-name>AjoutPanier</display-name>
+    <servlet-name>AjoutPanier</servlet-name>
+    <servlet-class>fr.info.sdweb.AjoutPanier</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>Servlet valider commande</description>
+    <display-name>ValiderCommande</display-name>
+    <servlet-name>ValiderCommande</servlet-name>
+    <servlet-class>fr.info.sdweb.ValiderCommande</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/Hello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ProduitServlet</servlet-name>
+    <url-pattern>/Product</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>AjoutPanier</servlet-name>
+    <url-pattern>/AjoutPanier</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet-mapping>
+    <servlet-name>ValiderCommande</servlet-name>
+    <url-pattern>/ValiderCommande</url-pattern>
+  </servlet-mapping>
+</web-app>
